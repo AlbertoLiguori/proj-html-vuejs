@@ -4,8 +4,10 @@
         <meta charset="utf-8">
 
         <!-- GOOGLE-FONT -->
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
         <!-- LINK TO FONTAWESOME -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
@@ -21,10 +23,268 @@
 
         <title>Avada Restaurant</title>
     </head>
-    <body>
+
+    <body >
+
+    <div id="root">
+
+      <!-- JUMBOTRONE -->
+      <section class="jumbotrone">
+
+                  <div class="row">
+
+                        <div class="left-jumbotrone col-lg-5">
+
+                              <div class="left-j-box">
+
+                                    <nav class="left-nav border_p">
+
+                                        <img class="logo-img" src="css/img/logo-restaurant.png" alt="">
+
+                                    </nav>
+
+                                    <div class="left-nav-content d-flex">
+
+                                          <h6>THE BEST TABLE IN TOWN</h6>
+
+                                          <h1>FINE DINING EXPERIENCE</h1>
+
+                                          <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                          <button type="button" name="button">EXPLORE THE MENU</button>
+
+                                    </div>
+
+                              </div>
+
+                        </div>
+
+                        <div class="right-jumbotrone col-lg-7">
+
+                              <div class="right-j-box">
+
+                                    <nav class="right-nav border_p">
+
+                                          <ul class="d-flex">
+
+                                                <li v-for="navItem in navArray">{{navItem}}</li>
+
+                                          </ul>
+
+                                    </nav>
+
+                              </div>
+
+                        </div>
+
+                  </div>
+
+      </section>
+
+      <!--SECTION 1: UNIVERSAL EXPERIENCE-->
+      <section class="first-section">
+
+                <div class="container">
+
+                      <div class="row">
+
+                          <div class="col-lg-6">
+
+                                <p> <strong> HAC TELLUS, FELIS RISUS AT </strong> mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.</p>
+
+                                <h2>food is our common ground, a universal experience.</h2>
+
+                                <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
+
+                                <img src="css/img/signature.jpg" alt="">
+                          </div>
+
+                          <div class="col-lg-6 right-section">
+
+                                <img src="css/img/first-section-bg.jpg" alt="">
+
+                          </div>
+
+                      </div>
+
+                      <div class="row">
+
+                          <div class="col-lg-4" v-for="item in section1Items">
+
+                                <img :src="item.imgUrl" alt="">
+                                <h2>{{item.title}}</h2>
+                                <p>{{item.paragraph}}</p>
+                                <button type="button" name="button">{{item.buttonText}}</button>
+
+                          </div>
+
+                      </div>
+
+                </div>
+
+      </section>
+
+      <!--SECTION 2: BEST TABLE IN TOWN -->
+      <section class="best-table-section">
+
+                <div class="row">
+
+                      <div class="col-lg-7">
+
+                            <img src="css/img/slider32x.jpg" alt="">
+
+                      </div>
+
+                      <div class="col-lg-5">
+
+                              <h6>THE BEST TABLE IN TOWN</h6>
+
+                              <h1>FINE DINING EXPERIENCE</h1>
+
+                              <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                              <button type="button" name="button">EXPLORE THE MENU</button>
+
+                      </div>
+
+                </div>
 
 
+      </section>
 
-        <script src="script.js"></script>
+      <!-- SECTION 3:REVIEWS -->
+      <section class="section-reviews">
+
+              <div class="container">
+
+                    <div class="row">
+
+                          <h4> <i>What critics are saying about us </i></h4>
+
+                          <div class="col-lg-6">
+
+                                <img src="css/img/blog72x-800x916.jpg" alt="">
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+
+                                <h6>THE BEST TABLE IN TOWN</h6>
+
+                                <h1>FINE DINING EXPERIENCE</h1>
+
+                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                <button type="button" name="button">EXPLORE THE MENU</button>
+
+                          </div>
+
+                    </div>
+
+                    <div class="row">
+
+                          <div class="col-lg-6">
+
+
+                                <h6>THE BEST TABLE IN TOWN</h6>
+
+                                <h1>FINE DINING EXPERIENCE</h1>
+
+                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                <button type="button" name="button">EXPLORE THE MENU</button>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+
+                                <h6>THE BEST TABLE IN TOWN</h6>
+
+                                <h1>FINE DINING EXPERIENCE</h1>
+
+                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                <button type="button" name="button">EXPLORE THE MENU</button>
+
+                          </div>
+
+                    </div>
+
+              </div>
+
+      </section>
+
+      <!-- SECTION 4:KUNG-FU CHICKEN -->
+      <section class="kung-fu-chicken-section">
+
+              <div class="row">
+
+                    <img src="css/img/pao-chicken.jpg" alt="">
+                    <span> KUNG PAO CHICKEN-$32</span>
+
+              </div>
+
+
+      </section>
+
+      <!-- SECTION 5: NEWS & PROMOTIONS -->
+
+      <section class="news-section">
+
+                  <div class="container">
+
+                      <h4> <i>Latest news & promotions </i></h4>
+
+                      <div class="row">
+
+                            <div class="col-lg-4" v-for="news in sectionNewsArray">
+
+                                  <img :src="news.imgUrl" alt="">
+                                  <h5>{{news.title}}</h5>
+                                  <span>{{news.details}}</span>
+
+
+                            </div>
+
+                      </div>
+
+                  </div>
+
+      </section>
+
+      <!-- SECTION 6: ON DA FLOOR -->
+
+      <section class="on-the-floor">
+
+                  <div class="row">
+
+                        <div class="col-lg-7">
+
+                              <img src="css/img/couple-on-the-floor.jpg" alt="">
+
+                        </div>
+
+                        <div class="col-lg-5">
+
+                                <h6>THE BEST TABLE IN TOWN</h6>
+
+                                <h1>FINE DINING EXPERIENCE</h1>
+
+                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                <button type="button" name="button">EXPLORE THE MENU</button>
+
+                        </div>
+
+                  </div>
+
+      </section>
+
+
+    </div>
+
+      <script src="script.js"></script>
     </body>
 </html>
