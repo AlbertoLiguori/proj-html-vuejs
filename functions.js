@@ -1,5 +1,7 @@
-let navListArray = ["Home", "Culinary History", "Our Team", "our Menu", "TakeOut", "Bulletin", "Reservsations", "Carrello"]
+// NAV DATA
+let navListArray = ["Home", "Culinary History", "Our Team", "Our Menu", "TakeOut", "Bulletin", "Reservsations"]
 
+// SECTION 1 DATA
 let itemsArray = [
   {
     imgUrl:"css/img/sushi-1.png",
@@ -24,8 +26,9 @@ let itemsArray = [
     buttonText:"LEARN MORE ABOUT US",
 
   },
-]
+];
 
+// SECTION NEWS DATA
 let newsArray=[
   {
     imgUrl:"css/img/best-coffee.jpg",
@@ -45,4 +48,77 @@ let newsArray=[
     details:["By admin" , "January 7th 2020", "Categories: News"]
 
   },
-]
+];
+
+// SECTION 7 MENU DATA
+
+let entreeArray=[
+  {
+    title:"AHI SALMON NIGIRI",
+    price:"48",
+    description:"Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit lacinia.",
+  },
+  {
+    title:"UMI MASU SALAD",
+    price:"21",
+    description:"Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+  },
+  {
+    title:"TEMAKI WITH CRAB",
+    price:"32",
+    description:"Ac vel, risus ornare senectus placerat duis amet dictumst tellus.",
+  },
+  {
+    title:"CALIFORNIA ROLLS",
+    price:"22",
+    description:"Ac vel, risus ornare senectus placerat duis amet dictumst tellus.",
+  }
+
+];
+
+let mainsArray=[
+  {
+    title:"BRAISED ABALONE",
+    price:"52",
+    description:"Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit lacinia.",
+  },
+  {
+    title:"TWICED COOKED PORK",
+    price:"21",
+    description:"Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+  },
+  {
+    title:"KUNG PAO CHICKEN",
+    price:"32",
+    description:"Ac vel, risus ornare senectus placerat duis amet dictumst tellus.",
+  },
+  {
+    title:"CHAR SIU & SUSHIS",
+    price:"48",
+    description:"Ac vel, risus ornare senectus placerat duis amet dictumst tellus.",
+  }
+
+];
+
+let dessertsArray=[
+  {
+    title:"CHOCOLATE BALL CAKE",
+    price:"13",
+    description:"Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit lacinia.",
+  },
+  {
+    title:"LIME PIE WITH CRUST",
+    price:"14",
+    description:"Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+  },
+  {
+    title:"RASPBERRY PEAR CAKE",
+    price:"18",
+    description:"Ac vel, risus ornare senectus placerat duis amet dictumst tellus.",
+  },
+  {
+    title:"CAFÈ AU LAIT",
+    price:"6",
+    description:"Ac vel, risus ornare senectus placerat duis amet dictumst tellus.",
+  }
+];

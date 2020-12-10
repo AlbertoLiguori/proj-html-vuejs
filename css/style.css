@@ -11,6 +11,12 @@ h2{
   line-height: 84px;
 }
 
+h3{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  font-size:56px;
+}
+
 h4{
   font-family: 'Lora', serif;
   font-weight: 400;
@@ -33,12 +39,44 @@ p{
   font-size:19px;
 }
 
-
 /* GENERAL */
+.h-100{
+  height: 100%;
+}
+.bg-black{
+  background-color: black;
+}
 
 section{
   margin-bottom:100px;
 }
+
+.white-button{
+  color:black;
+  background-color: white;
+  height:40px;
+  width:200px;
+  border:1px solid lightgray;
+}
+
+.line{
+  width:75px;
+  height:1px;
+  border:.5px solid lightgray;
+}
+
+.title-container{
+  text-align: center;
+}
+
+.title-container .line{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:50px;
+  margin-top:30px;
+}
+
+
 /* JUMBOTRONE */
 .jumbotrone{
   color:white;
@@ -57,9 +95,14 @@ section{
   background-position: bottom;
 }
 
-.left-j-box, .right-j-box{
+.left-j-box{
   margin:50px auto;
   width:75%;
+}
+
+.right-j-box{
+  margin:50px auto;
+  width:90%;
 }
 
 /* NAV */
@@ -73,8 +116,12 @@ nav{
 }
 
 .right-nav ul{
+  font-size: 16px;
+  font-family:'Work Sans', sans-serif;
+  font-weight: 500;
+  color: lightgray;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
   height:100%;
   align-items: center;
 
@@ -84,41 +131,135 @@ nav{
   display: flex;
   align-items: center;
 }
-
-.left-nav-content{
-  margin-top:200px;
-
-  border:1px solid white;
-  height:500px;
-  flex-direction: column;
-  justify-content:space-between;
+/* HELPERS */
+.mt-100{
+  margin-top: 100px;
 }
 
-.left-nav-content button{
+/* DEBG */
+[class*="col-"]{
+  border:1px solid purple;
+}
+
+.h-900{
+  height:900px;
+}
+section{
+  border:3px solid red;
+}
+
+.row{
+  border:3px solid green;
+}
+
+.absolute{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+/* CARD */
+.card{
+  color: white;
+  border:1px solid white;
+  height:600px;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content:space-around;
+}
+
+.card button{
   color:white;
   background-color: black;
   height:40px;
   width:200px;
   border:2px solid white;
-
 }
 
 /* SECTION 1: UNIVERSAL EXPERIENCE */
+.first-section .right-section {
+  background-image: url("img/first-section-bg.jpg");
+  background-size:cover;
+  height:900px;
+}
 
-.first-section .right-section img{
-  width:100%;
+.first-section .card{
+  height:100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  color: black;
+  width:80%;
+}
+
+.first-section img{
+  width:200px;
+}
+
+/* SECTION 1: SUSHI LIST */
+.sushi-list{
+  height:400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin:25px;
+  padding:20px;
+}
+
+.sushi-list img{
+  width:100px;
 }
 
 /* SECTION 2:BEST TABLE IN TOWN */
-
-.best-table-section img{
-  width:100%;
+.best-table-section .left-image{
+  background-image: url("img/slider32x.jpg");
+  background-size: cover;
 }
 
 /* SECTION 3:REVIEWS */
 
-.section-reviews img{
-  width:100%;
+.star-list{
+  list-style: none;
+}
+
+.star-list li{
+  display: inline;
+}
+.section-reviews h4{
+  text-align: center;
+}
+
+.section-reviews .left-image{
+  height:700px;
+  background-image: url("img/blog72x-800x916.jpg");
+  background-size: cover;
+}
+
+.section-reviews .right-section{
+  height:700px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.left-subsection, .right-subsection{
+  margin-top:60px;
+}
+
+.section-reviews .left-subsection{
+  background-image: url("img/info52x.jpg");
+  background-size: cover;
+  margin-right: 20px;
+  height:700px;
+}
+
+.section-reviews .right-subsection{
+  background-image: url("img/info12x.jpg");
+  background-size: cover;
+  margin-left: 20px;
+  height:700px;
 }
 
 /* SECTION 4:KUNG-FU CHICKEN */
@@ -128,7 +269,9 @@ nav{
 }
 
 /* SECTION 5: NEWS & PROMOTIONS */
-
+.newe-container{
+  margin:15px;
+}
 .news-section img{
   width:100%;
 }
@@ -139,7 +282,54 @@ nav{
 }
 
 /* SECTION 6: ON DA FLOOR */
-.on-the-floor img{
-  width:100%;
+.on-the-floor .left-image{
+  height:900px;
+  background-image: url("img/couple-on-the-floor.jpg");
+  background-size: cover;
+}
 
+.on-the-floor .right-section{
+  height:900px;
+}
+
+/* SECTION 7: LA CARTE */
+
+.menu-container {
+  background-color:lightgray;
+  padding:50px;
+}
+
+.menu-container ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height:1000px;
+}
+
+
+.menu-special{
+  color: white;
+  background-image: url("img/misc22x.jpg");
+  background-size: cover;
+  position: relative;
+  bottom:50px;
+}
+
+/* SECTION 8: BRAISED ABALONE */
+
+.abalone-section{
+  background-image:url("img/hero42x.jpg");
+  background-size: cover;
+  height:800px;
+}
+
+.abalone-section .left-section{
+  margin-top:100px;
+  height:600px;
+}
+
+/* FOOTER */
+footer{
+  background-image: url();
 }

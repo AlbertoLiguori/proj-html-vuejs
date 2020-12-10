@@ -33,9 +33,9 @@
 
                   <div class="row">
 
-                        <div class="left-jumbotrone col-lg-5">
+                        <div class="left-jumbotrone col-lg-5 emc2">
 
-                              <div class="left-j-box">
+                              <div class="left-j-box border_g">
 
                                     <nav class="left-nav border_p">
 
@@ -43,7 +43,7 @@
 
                                     </nav>
 
-                                    <div class="left-nav-content d-flex">
+                                    <div class="card absolute">
 
                                           <h6>THE BEST TABLE IN TOWN</h6>
 
@@ -67,7 +67,8 @@
 
                                           <ul class="d-flex">
 
-                                                <li v-for="navItem in navArray">{{navItem}}</li>
+                                                <li v-for="navItem in navList">{{navItem}}</li>
+                                                <li> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </li>
 
                                           </ul>
 
@@ -88,33 +89,45 @@
 
                       <div class="row">
 
-                          <div class="col-lg-6">
+                          <div class="col-lg-6 h-900 emc2">
 
-                                <p> <strong> HAC TELLUS, FELIS RISUS AT </strong> mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.</p>
+                                <div class="card absolute">
 
-                                <h2>food is our common ground, a universal experience.</h2>
+                                      <p> <strong> HAC TELLUS, FELIS RISUS AT </strong> mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.</p>
 
-                                <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
+                                      <h2>food is our common ground, a universal experience.</h2>
 
-                                <img src="css/img/signature.jpg" alt="">
+                                      <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
+
+                                      <img src="css/img/signature.jpg" alt="">
+
+                                </div>
                           </div>
 
                           <div class="col-lg-6 right-section">
 
-                                <img src="css/img/first-section-bg.jpg" alt="">
+                                <span> CALIFORNIA ROLLS - $22 </span>
 
                           </div>
 
                       </div>
 
-                      <div class="row">
+                      <!-- SECTION 1: SUSHI LIST -->
+                      <div class="row mt-100">
 
                           <div class="col-lg-4" v-for="item in section1Items">
 
-                                <img :src="item.imgUrl" alt="">
-                                <h2>{{item.title}}</h2>
-                                <p>{{item.paragraph}}</p>
-                                <button type="button" name="button">{{item.buttonText}}</button>
+                                <div class="sushi-list">
+
+                                      <img :src="item.imgUrl" alt="">
+
+                                      <h5>{{item.title}}</h5>
+
+                                      <p>{{item.paragraph}}</p>
+
+                                      <button class="white-button" type="button" name="button">{{item.buttonText}}</button>
+
+                                </div>
 
                           </div>
 
@@ -129,21 +142,23 @@
 
                 <div class="row">
 
-                      <div class="col-lg-7">
-
-                            <img src="css/img/slider32x.jpg" alt="">
+                      <div class="col-lg-7 left-image h-900">
 
                       </div>
 
-                      <div class="col-lg-5">
+                      <div class="col-lg-5 h-900 bg-black emc2">
 
-                              <h6>THE BEST TABLE IN TOWN</h6>
+                            <div class="card absolute">
 
-                              <h1>FINE DINING EXPERIENCE</h1>
+                                    <h6>FINE DINING EXPERIENCE</h6>
 
-                              <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                    <h2>THE BEST TABLE IN TOWN</h2>
 
-                              <button type="button" name="button">EXPLORE THE MENU</button>
+                                    <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                    <button type="button" name="button">EXPLORE THE MENU</button>
+
+                            </div>
 
                       </div>
 
@@ -159,24 +174,43 @@
 
                     <div class="row">
 
-                          <h4> <i>What critics are saying about us </i></h4>
+                          <div class="title-container">
 
-                          <div class="col-lg-6">
+                                <h4> <i>What critics are saying about us </i></h4>
 
-                                <img src="css/img/blog72x-800x916.jpg" alt="">
+                                <div class="line"></div>
 
                           </div>
 
-                          <div class="col-lg-6">
+                          <div class="col-lg-6 left-image">
 
+                                <!-- <img src="css/img/blog72x-800x916.jpg" alt=""> -->
 
-                                <h6>THE BEST TABLE IN TOWN</h6>
+                          </div>
 
-                                <h1>FINE DINING EXPERIENCE</h1>
+                          <div class="col-lg-6 bg-black right-section emc2">
 
-                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                <div class="card absolute">
 
-                                <button type="button" name="button">EXPLORE THE MENU</button>
+                                        <h6>MEGGY STEWART</h6>
+
+                                        <h3>NEW YORK TIMES</h3>
+
+                                        <ul class="star-list">
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+
+                                        <div class="line"></div>
+
+                                        <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                        <button type="button" name="button">READ FULL ARTICLE</button>
+
+                                </div>
 
                           </div>
 
@@ -186,27 +220,61 @@
 
                           <div class="col-lg-6">
 
+                                <div class="left-subsection emc2">
 
-                                <h6>THE BEST TABLE IN TOWN</h6>
+                                      <div class="card absolute">
 
-                                <h1>FINE DINING EXPERIENCE</h1>
+                                            <h6>MARY MAXEY</h6>
 
-                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                            <h3>THE GUARDIAN</h3>
 
-                                <button type="button" name="button">EXPLORE THE MENU</button>
+                                            <ul class="star-list">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+
+                                            <div class="line"></div>
+
+                                            <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                            <button type="button" name="button">READ FULL ARTICLE</button>
+
+                                      </div>
+
+                                </div>
 
                           </div>
 
                           <div class="col-lg-6">
 
+                                <div class="right-subsection emc2">
 
-                                <h6>THE BEST TABLE IN TOWN</h6>
+                                      <div class="card absolute">
 
-                                <h1>FINE DINING EXPERIENCE</h1>
+                                            <h6>PATRICK MONROE</h6>
 
-                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                            <h3>GLOBE AND MAIL</h3>
 
-                                <button type="button" name="button">EXPLORE THE MENU</button>
+                                            <ul class="star-list">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+
+                                            <div class="line"></div>
+
+                                            <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                            <button type="button" name="button">READ FULL ARTICLE<</button>
+
+                                      </div>
+
+                                </div>
 
                           </div>
 
@@ -235,16 +303,24 @@
 
                   <div class="container">
 
-                      <h4> <i>Latest news & promotions </i></h4>
-
                       <div class="row">
 
-                            <div class="col-lg-4" v-for="news in sectionNewsArray">
+                            <div class="title-container">
 
-                                  <img :src="news.imgUrl" alt="">
-                                  <h5>{{news.title}}</h5>
-                                  <span>{{news.details}}</span>
+                                  <h4> <i>Latest news & promotions </i></h4>
+                                  <div class="line"></div>
 
+                            </div>
+
+                            <div class="col-lg-4" v-for="newe in news">
+
+                                  <div class="newe-container">
+
+                                        <img :src="newe.imgUrl" alt="">
+                                        <h5>{{newe.title}}</h5>
+                                        <span>{{newe.details}}</span>
+
+                                  </div>
 
                             </div>
 
@@ -260,27 +336,149 @@
 
                   <div class="row">
 
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 left-image">
 
-                              <img src="css/img/couple-on-the-floor.jpg" alt="">
+                              <!-- <img src="css/img/couple-on-the-floor.jpg" alt=""> -->
 
                         </div>
 
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 bg-black right-section emc2">
 
-                                <h6>THE BEST TABLE IN TOWN</h6>
+                              <div class="card absolute">
 
-                                <h1>FINE DINING EXPERIENCE</h1>
+                                    <h6>ENJOY YOUR MEAL AT HOME</h6>
 
-                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                    <h2>TAKEOUT NOW AVAILABLE</h2>
 
-                                <button type="button" name="button">EXPLORE THE MENU</button>
+                                    <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                    <button type="button" name="button">EXPLORE THE MENU</button>
+
+                              </div>
 
                         </div>
 
                   </div>
 
       </section>
+
+      <!-- SECTION 7: LA CARTE -->
+      <section>
+
+                <div class="container">
+
+                    <div class="row">
+
+                          <!-- HORS D'OEUVRES -->
+                          <div class="col-lg-4 menu-container">
+
+                              <h3>HORS D'OEUVRES</h3>
+
+                              <ul>
+
+                                <li v-for="entree in entrees">
+
+                                    <h5>{{entree.title}} </h5>
+                                    <span>${{entree.price}}</span>
+                                    <p>{{entree.description}}</p>
+
+                                </li>
+
+                              </ul>
+
+                          </div>
+
+                          <!-- MAIN COURSES -->
+                          <div class="col-lg-4 menu-container menu-special">
+
+                              <h3>MAIN COURSE</h3>
+
+                              <ul>
+
+                                <li v-for="main in mains">
+
+                                    <h5>{{main.title}}</h5>
+                                    <span>${{main.price}}</span>
+                                    <p>{{main.description}}</p>
+
+                                </li>
+
+                              </ul>
+
+                          </div>
+
+                          <!-- DESSERTS -->
+                          <div class="col-lg-4 menu-container">
+
+                              <h3>DESSERTS</h3>
+
+                              <ul>
+
+                                <li v-for="dessert in desserts">
+
+                                    <h5>{{dessert.title}}</h5>
+                                    <span>${{dessert.price}}</span>
+                                    <p>{{dessert.description}}</p>
+
+                                </li>
+
+                              </ul>
+
+                          </div>
+
+                    </div>
+
+                </div>
+      </section>
+
+      <!-- SECTION 8: BRAISED ABALONE -->
+      <section class="abalone-section">
+
+              <div class="container">
+
+                  <div class="row">
+
+                        <div class="col-lg-5 bg-black left-section emc2">
+
+                              <div class="card absolute">
+
+                                      <h6>$52</h6>
+
+                                      <h2>BRAISED ABALONE</h2>
+
+                                      <div class="line"></div>
+
+                                      <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                      <button type="button" name="button">VIEW IN THE MENU</button>
+
+                              </div>
+
+
+                        </div>
+
+                  </div>
+
+              </div>
+
+            <!-- <img src="css/img/hero42x.jpg" alt=""> -->
+
+      </section>
+
+      <!-- FOOTER -->
+
+      <footer>
+
+                <img src="" alt="">
+                <p></p>
+
+                <ul>
+
+                    <li></li>
+
+                </ul>
+
+      </footer>
 
 
     </div>
