@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
         <!-- LINK TO FONTAWESOME -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <script src="https://use.fontawesome.com/200c567139.js"></script>
 
         <!-- LINK TO MY CSS -->
         <link rel="stylesheet" href="css/bool-12.css">
@@ -31,9 +31,9 @@
       <!-- JUMBOTRONE -->
       <section class="jumbotrone">
 
-                  <div class="row">
+                  <div class="row d-flex">
 
-                        <div class="left-jumbotrone col-lg-5 emc2">
+                        <div class="left-jumbotrone flex-2 emc2">
 
                               <div class="left-j-box border_g">
 
@@ -43,23 +43,31 @@
 
                                     </nav>
 
-                                    <div class="card absolute">
+                                    <div class="d-flex absolute width-75">
 
-                                          <h6>THE BEST TABLE IN TOWN</h6>
+                                          <div class="card-line">
 
-                                          <h1>FINE DINING EXPERIENCE</h1>
+                                          </div>
 
-                                          <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                          <div class="card flex-3">
 
-                                          <button type="button" name="button">EXPLORE THE MENU</button>
 
+                                                <h6>THE BEST TABLE IN TOWN</h6>
+
+                                                <h1>FINE DINING EXPERIENCE</h1>
+
+                                                <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                                <button type="button" name="button">EXPLORE THE MENU</button>
+
+                                          </div>
                                     </div>
 
                               </div>
 
                         </div>
 
-                        <div class="right-jumbotrone col-lg-7">
+                        <div class="right-jumbotrone flex-3">
 
                               <div class="right-j-box">
 
@@ -87,35 +95,32 @@
 
                 <div class="container">
 
-                      <div class="row">
+                      <div class="row h-900 d-flex">
 
-                          <div class="col-lg-6 h-900 emc2">
+                          <div class="flex-1 d-flex left-section">
 
-                                <div class="card absolute">
+                                <p> <strong> HAC TELLUS, FELIS RISUS AT </strong> mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.</p>
 
-                                      <p> <strong> HAC TELLUS, FELIS RISUS AT </strong> mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.</p>
+                                <h2>food is our common ground, a universal experience.</h2>
 
-                                      <h2>food is our common ground, a universal experience.</h2>
+                                <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
 
-                                      <p>Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
+                                <img src="css/img/signature.jpg" alt="">
 
-                                      <img src="css/img/signature.jpg" alt="">
-
-                                </div>
                           </div>
 
-                          <div class="col-lg-6 right-section">
+                          <div class="flex-1 d-flex right-section">
 
-                                <span> CALIFORNIA ROLLS - $22 </span>
+                                <h6> CALIFORNIA ROLLS - $22 </h6>
 
                           </div>
 
                       </div>
 
                       <!-- SECTION 1: SUSHI LIST -->
-                      <div class="row mt-100">
+                      <div class="row d-flex mt-100">
 
-                          <div class="col-lg-4" v-for="item in section1Items">
+                          <div class="flex-1" v-for="item in section1Items">
 
                                 <div class="sushi-list">
 
@@ -140,23 +145,31 @@
       <!--SECTION 2: BEST TABLE IN TOWN -->
       <section class="best-table-section">
 
-                <div class="row">
+                <div class="row d-flex h-900">
 
-                      <div class="col-lg-7 left-image h-900">
+                      <div class="flex-3 left-image">
 
                       </div>
 
-                      <div class="col-lg-5 h-900 bg-black emc2">
+                      <div class="flex-2 bg-black emc2">
 
-                            <div class="card absolute">
+                            <div class="d-flex absolute width-75">
 
-                                    <h6>FINE DINING EXPERIENCE</h6>
+                                    <div class="card-line">
 
-                                    <h2>THE BEST TABLE IN TOWN</h2>
+                                    </div>
 
-                                    <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                    <div class="card flex-3">
 
-                                    <button type="button" name="button">EXPLORE THE MENU</button>
+                                          <h6>FINE DINING EXPERIENCE</h6>
+
+                                          <h2>THE BEST TABLE IN TOWN</h2>
+
+                                          <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                          <button type="button" name="button">EXPLORE THE MENU</button>
+
+                                    </div>
 
                             </div>
 
@@ -182,19 +195,27 @@
 
                           </div>
 
-                          <div class="col-lg-6 left-image">
+                    </div>
+
+                    <div class="row d-flex h-700">
+
+                          <div class="flex-1 left-image">
 
                                 <!-- <img src="css/img/blog72x-800x916.jpg" alt=""> -->
 
                           </div>
 
-                          <div class="col-lg-6 bg-black right-section emc2">
+                          <div class="flex-1 bg-black right-section emc2">
 
-                                <div class="card absolute">
+                                <div class="card absolute width-75">
 
-                                        <h6>MEGGY STEWART</h6>
+                                        <div class="">
 
-                                        <h3>NEW YORK TIMES</h3>
+                                              <h6>MEGGY STEWART</h6>
+
+                                              <h3>NEW YORK TIMES</h3>
+
+                                        </div>
 
                                         <ul class="star-list">
                                             <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -216,63 +237,63 @@
 
                     </div>
 
-                    <div class="row">
+                    <div class="row d-flex h-700">
 
-                          <div class="col-lg-6">
+                          <div class="left-subsection flex-1 emc2">
 
-                                <div class="left-subsection emc2">
+                                <div class="card absolute width-75">
 
-                                      <div class="card absolute">
+                                      <div class="">
 
                                             <h6>MARY MAXEY</h6>
 
                                             <h3>THE GUARDIAN</h3>
 
-                                            <ul class="star-list">
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            </ul>
-
-                                            <div class="line"></div>
-
-                                            <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
-
-                                            <button type="button" name="button">READ FULL ARTICLE</button>
-
                                       </div>
+
+                                      <ul class="star-list">
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                      </ul>
+
+                                      <div class="line"></div>
+
+                                      <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                      <button type="button" name="button">READ FULL ARTICLE</button>
 
                                 </div>
 
                           </div>
 
-                          <div class="col-lg-6">
+                          <div class="right-subsection flex-1 emc2">
 
-                                <div class="right-subsection emc2">
+                                <div class="card absolute width-75">
 
-                                      <div class="card absolute">
+                                      <div class="">
 
                                             <h6>PATRICK MONROE</h6>
 
                                             <h3>GLOBE AND MAIL</h3>
 
-                                            <ul class="star-list">
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            </ul>
-
-                                            <div class="line"></div>
-
-                                            <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
-
-                                            <button type="button" name="button">READ FULL ARTICLE<</button>
-
                                       </div>
+
+                                      <ul class="star-list">
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                      </ul>
+
+                                      <div class="line"></div>
+
+                                      <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                      <button type="button" name="button">READ FULL ARTICLE</button>
 
                                 </div>
 
@@ -285,15 +306,9 @@
       </section>
 
       <!-- SECTION 4:KUNG-FU CHICKEN -->
-      <section class="kung-fu-chicken-section">
+      <section class="kung-fu-chicken-section d-flex h-700">
 
-              <div class="row">
-
-                    <img src="css/img/pao-chicken.jpg" alt="">
-                    <span> KUNG PAO CHICKEN-$32</span>
-
-              </div>
-
+                <h6> KUNG PAO CHICKEN-$32</h6>
 
       </section>
 
@@ -311,8 +326,11 @@
                                   <div class="line"></div>
 
                             </div>
+                      </div>
 
-                            <div class="col-lg-4" v-for="newe in news">
+                      <div class="row d-flex">
+
+                            <div class="flex-1" v-for="newe in news">
 
                                   <div class="newe-container">
 
@@ -334,17 +352,23 @@
 
       <section class="on-the-floor">
 
-                  <div class="row">
+                  <div class="row d-flex h-900">
 
-                        <div class="col-lg-7 left-image">
+                        <div class="flex-3 left-image">
 
                               <!-- <img src="css/img/couple-on-the-floor.jpg" alt=""> -->
 
                         </div>
 
-                        <div class="col-lg-5 bg-black right-section emc2">
+                        <div class="flex-2 bg-black right-section emc2">
 
-                              <div class="card absolute">
+                              <div class="d-flex absolute width-75">
+
+                                    <div class="card-line">
+
+                                    </div>
+
+                                    <div class="card flex-3">
 
                                     <h6>ENJOY YOUR MEAL AT HOME</h6>
 
@@ -353,6 +377,8 @@
                                     <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
 
                                     <button type="button" name="button">EXPLORE THE MENU</button>
+
+                                    </div>
 
                               </div>
 
@@ -363,14 +389,14 @@
       </section>
 
       <!-- SECTION 7: LA CARTE -->
-      <section>
+      <section class="carte-section">
 
                 <div class="container">
 
-                    <div class="row">
+                    <div class="row d-flex">
 
                           <!-- HORS D'OEUVRES -->
-                          <div class="col-lg-4 menu-container">
+                          <div class="flex-1 menu-container">
 
                               <h3>HORS D'OEUVRES</h3>
 
@@ -389,7 +415,7 @@
                           </div>
 
                           <!-- MAIN COURSES -->
-                          <div class="col-lg-4 menu-container menu-special">
+                          <div class="flex-1 menu-container menu-special">
 
                               <h3>MAIN COURSE</h3>
 
@@ -408,19 +434,19 @@
                           </div>
 
                           <!-- DESSERTS -->
-                          <div class="col-lg-4 menu-container">
+                          <div class="flex-1 menu-container">
 
                               <h3>DESSERTS</h3>
 
                               <ul>
 
-                                <li v-for="dessert in desserts">
+                                    <li v-for="dessert in desserts">
 
-                                    <h5>{{dessert.title}}</h5>
-                                    <span>${{dessert.price}}</span>
-                                    <p>{{dessert.description}}</p>
+                                        <h5>{{dessert.title}}</h5>
+                                        <span>${{dessert.price}}</span>
+                                        <p>{{dessert.description}}</p>
 
-                                </li>
+                                    </li>
 
                               </ul>
 
@@ -436,9 +462,9 @@
 
               <div class="container">
 
-                  <div class="row">
+                  <div class="row d-flex h-700">
 
-                        <div class="col-lg-5 bg-black left-section emc2">
+                        <div class="bg-black left-section emc2">
 
                               <div class="card absolute">
 
@@ -465,18 +491,42 @@
 
       </section>
 
+      <!-- SECTION 9:LAST SECTION-->
+
+      <section class="last-section">
+
+              <div class="container d-flex">
+
+                    <div class="row d-flex h-700 central-section emc2">
+
+                          <div class="d-flex last-section-container absolute">
+
+                                <img class="logo-img" src="css/img/logo-restaurant.png" alt="">
+
+                                <p>Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.</p>
+
+                                <ul>
+
+                                    <li> <i class="fa fa-facebook" aria-hidden="true"></i> </li>
+                                    <li> <i class="fa fa-twitter" aria-hidden="true"></i> </li>
+                                    <li> <i class="fa fa-youtube-play" aria-hidden="true"> </i></li>
+                                    <li> <i class="fa fa-instagram" aria-hidden="true"></i> </li>
+                                    <li> <i class="fa fa-linkedin" aria-hidden="true"></i> </li>
+
+                                </ul>
+
+                          </div>
+
+                    </div>
+
+              </div>
+
+      </section>
+
       <!-- FOOTER -->
+      <footer class="d-flex">
 
-      <footer>
-
-                <img src="" alt="">
-                <p></p>
-
-                <ul>
-
-                    <li></li>
-
-                </ul>
+                <span>Copyright 2012 - 2019 Avada | All Rights Reserved | Powered by WordPress | ThemeFusion</span>
 
       </footer>
 

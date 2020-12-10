@@ -33,19 +33,19 @@ let newsArray=[
   {
     imgUrl:"css/img/best-coffee.jpg",
     title:"THE BEST COFFEE IN TOWN",
-    details:["By admin" , "January 7th 2020", "Categories: News"]
+    details:"By admin | January 7th 2020 | Categories: News"
 
   },
   {
     imgUrl:"css/img/cook-girl.jpg",
     title:"DISCOVER OUR NEW MENU",
-    details:["By admin" , "January 7th 2020", "Categories: News"]
+    details:"By admin | January 7th 2020 | Categories: News"
 
   },
   {
     imgUrl:"css/img/contactless.jpg",
     title:"WE NOW ACCEPT SQUARE",
-    details:["By admin" , "January 7th 2020", "Categories: News"]
+    details:"By admin | January 7th 2020 | Categories: News"
 
   },
 ];

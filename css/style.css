@@ -32,6 +32,7 @@ h5{
 h6{
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
+  font-weight: 400;
 }
 
 p{
@@ -63,6 +64,15 @@ section{
   width:75px;
   height:1px;
   border:.5px solid lightgray;
+}
+
+.card-line{
+  width:60px;
+  height: .5px;
+  border: .5px solid lightgray;
+  margin-right:20px;
+  margin-top:5px;
+
 }
 
 .title-container{
@@ -136,9 +146,38 @@ nav{
   margin-top: 100px;
 }
 
+.flex-1{
+  float:left;
+  flex:1;
+}
+
+.flex-2{
+float:left;
+flex:2;
+}
+
+.flex-3{
+float:left;
+flex:3;
+}
+
+.flex-4{
+float:left;
+flex:4;
+}
+
+.width-75{
+  width:75%;
+}
+
+
+
 /* DEBG */
 [class*="col-"]{
   border:1px solid purple;
+}
+.h-700{
+  height:700px;
 }
 
 .h-900{
@@ -167,7 +206,7 @@ section{
   display: flex;
   flex:1;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content:space-between;
 }
 
 .card button{
@@ -182,16 +221,17 @@ section{
 .first-section .right-section {
   background-image: url("img/first-section-bg.jpg");
   background-size:cover;
-  height:900px;
+  justify-content: center;
+  align-items: flex-end;
+  padding:20px;
+  color:white;
 }
 
-.first-section .card{
-  height:100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.first-section .left-section{
+  flex-direction: column;
   justify-content: space-between;
   color: black;
-  width:80%;
+  padding-right:50px;
 }
 
 .first-section img{
@@ -234,13 +274,11 @@ section{
 }
 
 .section-reviews .left-image{
-  height:700px;
   background-image: url("img/blog72x-800x916.jpg");
   background-size: cover;
 }
 
 .section-reviews .right-section{
-  height:700px;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -252,26 +290,43 @@ section{
   background-image: url("img/info52x.jpg");
   background-size: cover;
   margin-right: 20px;
-  height:700px;
 }
 
 .section-reviews .right-subsection{
   background-image: url("img/info12x.jpg");
   background-size: cover;
   margin-left: 20px;
-  height:700px;
+}
+
+.section-reviews .card{
+  justify-content: space-around;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.section-reviews h3{
+  margin-top:20px;
 }
 
 /* SECTION 4:KUNG-FU CHICKEN */
 
-.kung-fu-chicken-section img{
-  width:100%;
+.kung-fu-chicken-section{
+  background-image: url("img/pao-chicken.jpg");
+  background-size: cover;
+  color:white;
+  justify-content: center;
+  align-items: flex-end;
+  padding:20px;
 }
+
+
 
 /* SECTION 5: NEWS & PROMOTIONS */
 .newe-container{
   margin:15px;
+  text-align: center;
 }
+
 .news-section img{
   width:100%;
 }
@@ -283,13 +338,8 @@ section{
 
 /* SECTION 6: ON DA FLOOR */
 .on-the-floor .left-image{
-  height:900px;
   background-image: url("img/couple-on-the-floor.jpg");
   background-size: cover;
-}
-
-.on-the-floor .right-section{
-  height:900px;
 }
 
 /* SECTION 7: LA CARTE */
@@ -304,7 +354,6 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height:1000px;
 }
 
 
@@ -322,14 +371,63 @@ section{
   background-image:url("img/hero42x.jpg");
   background-size: cover;
   height:800px;
+  margin-bottom:0px;
 }
 
 .abalone-section .left-section{
   margin-top:100px;
+  width:50%;
   height:600px;
+}
+
+/* SECTION 9:LAST SECTION */
+
+.last-section{
+  background-image: url(img/slider52x.jpg);
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 0px;
+}
+
+.last-section .container{
+  justify-content: center;
+}
+
+.last-section-container{
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width:50%;
+  color:white;
+  height:250px;
+}
+.last-section-container ul{
+  list-style: none;
+}
+
+.last-section-container ul li{
+  display: inline;
+
+
+}
+
+.last-section-container ul li i{
+  background-color: white;
+  padding:20px;
+  border-radius: 50%;
+  color:black;
+  margin:5px;
+}
+
+.last-section .central-section{
+  align-items: center;
 }
 
 /* FOOTER */
 footer{
-  background-image: url();
+  background-color: black;
+  color:white;
+  height:100px;
+  justify-content: center;
+  align-items: center;
 }
