@@ -1,3 +1,56 @@
+/* LAYOUT */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.emc2{
+  position:relative;
+}
+
+.container{
+  width:1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.row{
+  width:100%;
+}
+
+
+.flex-1{
+  float:left;
+  flex:1;
+}
+
+.flex-2{
+float:left;
+flex:2;
+}
+
+.flex-3{
+float:left;
+flex:3;
+}
+
+.flex-4{
+float:left;
+flex:4;
+}
+
+/* CLEARFIX */
+.row::after{
+  content:"";
+  display: table;
+  clear:both;
+}
+
 /* FONTS */
 h1{
   font-family: 'Bebas Neue', cursive;
@@ -64,7 +117,6 @@ section{
   border: .5px solid lightgray;
   margin-right:20px;
   margin-top:5px;
-
 }
 
 .title-container{
@@ -113,8 +165,6 @@ section{
   display: inline;
 }
 
-
-
 /* CARD */
 .card{
   color: white;
@@ -140,7 +190,6 @@ section{
   background-color: white;
   color:black;
 }
-
 
 /* JUMBOTRONE */
 .jumbotrone{
@@ -513,26 +562,6 @@ footer{
   margin-top: 100px;
 }
 
-.flex-1{
-  float:left;
-  flex:1;
-}
-
-.flex-2{
-float:left;
-flex:2;
-}
-
-.flex-3{
-float:left;
-flex:3;
-}
-
-.flex-4{
-float:left;
-flex:4;
-}
-
 .width-75{
   width:75%;
 }
@@ -557,7 +586,4 @@ flex:4;
   width:100%;
   background-color: rgba(0,0,0,0.5);
   box-shadow: inset 0px 300px 400px black;
-  /* color:white; */
-  /* flex-direction: column;
-  justify-content: center; */
 }
