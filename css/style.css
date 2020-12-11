@@ -124,6 +124,10 @@ section{
   background-position: bottom;
 }
 
+.right-jumbotrone .t-layer{
+  margin-top: -50px;
+}
+
 .left-j-box{
   margin:50px auto;
   width:75%;
@@ -153,6 +157,10 @@ nav{
   justify-content: space-around;
   height:100%;
   align-items: center;
+}
+
+.right-nav ul li:hover{
+  color:white;
 }
 
 .left-nav{
@@ -367,11 +375,13 @@ nav{
   padding:50px;
 }
 
+
 .menu-container ul{
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  min-height:900px;
 }
 
 .menu-special{
@@ -380,6 +390,11 @@ nav{
   background-size: cover;
   position: relative;
   bottom:50px;
+  padding:1px;
+}
+
+.menu-special .t-layer{
+  padding:49px;
 }
 
 /* SECTION 8: BRAISED ABALONE */
@@ -413,7 +428,6 @@ nav{
   background-size: cover;
   background-position: bottom;
   margin-bottom: 0px;
-  opacity: 0.5;
 }
 
 .last-section .container{
@@ -500,4 +514,14 @@ flex:4;
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
+}
+
+.t-layer{
+  height:100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: inset 0px 300px 400px black;
+  /* color:white; */
+  /* flex-direction: column;
+  justify-content: center; */
 }

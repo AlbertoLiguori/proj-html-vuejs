@@ -69,20 +69,24 @@
 
                         <div class="right-jumbotrone flex-3">
 
-                              <div class="right-j-box">
+                              <!-- <div class="t-layer"> -->
 
-                                    <nav class="right-nav">
+                                    <div class="right-j-box">
 
-                                          <ul class="d-flex">
+                                          <nav class="right-nav">
 
-                                                <li v-for="navItem in navList">{{navItem}}</li>
-                                                <li> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </li>
+                                                <ul class="d-flex">
 
-                                          </ul>
+                                                      <li v-for="navItem in navList">{{navItem}}</li>
+                                                      <li> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </li>
 
-                                    </nav>
+                                                </ul>
 
-                              </div>
+                                          </nav>
+
+                                    </div>
+
+                            <!-- </div> -->
 
                         </div>
 
@@ -241,29 +245,33 @@
 
                           <div class="left-subsection flex-1 emc2">
 
-                                <div class="card absolute width-75">
+                                <div class="t-layer">
 
-                                      <div class="">
+                                      <div class="card absolute width-75">
 
-                                            <h6>MARY MAXEY</h6>
+                                            <div class="">
 
-                                            <h3>THE GUARDIAN</h3>
+                                                  <h6>MARY MAXEY</h6>
+
+                                                  <h3>THE GUARDIAN</h3>
+
+                                            </div>
+
+                                            <ul class="star-list">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+
+                                            <div class="line"></div>
+
+                                            <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+
+                                            <button type="button" name="button">READ FULL ARTICLE</button>
 
                                       </div>
-
-                                      <ul class="star-list">
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                      </ul>
-
-                                      <div class="line"></div>
-
-                                      <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
-
-                                      <button type="button" name="button">READ FULL ARTICLE</button>
 
                                 </div>
 
@@ -271,31 +279,35 @@
 
                           <div class="right-subsection flex-1 emc2">
 
-                                <div class="card absolute width-75">
+                              <div class="t-layer">
 
-                                      <div class="">
+                                    <div class="card absolute width-75">
 
-                                            <h6>PATRICK MONROE</h6>
+                                          <div class="">
 
-                                            <h3>GLOBE AND MAIL</h3>
+                                                <h6>PATRICK MONROE</h6>
 
-                                      </div>
+                                                <h3>GLOBE AND MAIL</h3>
 
-                                      <ul class="star-list">
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                      </ul>
+                                          </div>
 
-                                      <div class="line"></div>
+                                          <ul class="star-list">
+                                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                          </ul>
 
-                                      <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
+                                          <div class="line"></div>
 
-                                      <button type="button" name="button">READ FULL ARTICLE</button>
+                                          <p>Pellentesque vitae viverra risus,sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis. </p>
 
-                                </div>
+                                          <button type="button" name="button">READ FULL ARTICLE</button>
+
+                                    </div>
+
+                              </div>
 
                           </div>
 
@@ -463,19 +475,23 @@
                           <!-- MAIN COURSES -->
                           <div class="flex-1 menu-container menu-special">
 
-                              <h3>MAIN COURSE</h3>
+                              <div class="t-layer">
 
-                              <ul>
+                                    <h3>MAIN COURSE</h3>
 
-                                <li v-for="main in mains">
+                                    <ul>
 
-                                    <h5>{{main.title}}</h5>
-                                    <span>${{main.price}}</span>
-                                    <p>{{main.description}}</p>
+                                      <li v-for="main in mains">
 
-                                </li>
+                                          <h5>{{main.title}}</h5>
+                                          <span>${{main.price}}</span>
+                                          <p>{{main.description}}</p>
 
-                              </ul>
+                                      </li>
+
+                                    </ul>
+
+                              </div>
 
                           </div>
 
@@ -543,38 +559,42 @@
 
       <!-- SECTION 9:LAST SECTION-->
 
-      <div class="bg-black">
+
 
       <section class="last-section">
 
-              <div class="container d-flex">
+                <div class="t-layer">
 
-                    <div class="row d-flex h-700 central-section emc2">
+                      <div class="container d-flex">
 
-                          <div class="d-flex last-section-container absolute">
+                            <div class="row d-flex h-700 central-section emc2">
 
-                                <img class="logo-img" src="css/img/logo-restaurant.png" alt="">
+                                  <div class="d-flex last-section-container absolute">
 
-                                <p>Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.</p>
+                                        <img class="logo-img" src="css/img/logo-restaurant.png" alt="">
 
-                                <ul>
+                                        <p>Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu proin sit massa condimentum.</p>
 
-                                    <li> <i class="fa fa-facebook" aria-hidden="true"></i> </li>
-                                    <li> <i class="fa fa-twitter" aria-hidden="true"></i> </li>
-                                    <li> <i class="fa fa-youtube-play" aria-hidden="true"> </i></li>
-                                    <li> <i class="fa fa-instagram" aria-hidden="true"></i> </li>
-                                    <li> <i class="fa fa-linkedin" aria-hidden="true"></i> </li>
+                                        <ul>
 
-                                </ul>
+                                            <li> <i class="fa fa-facebook" aria-hidden="true"></i> </li>
+                                            <li> <i class="fa fa-twitter" aria-hidden="true"></i> </li>
+                                            <li> <i class="fa fa-youtube-play" aria-hidden="true"> </i></li>
+                                            <li> <i class="fa fa-instagram" aria-hidden="true"></i> </li>
+                                            <li> <i class="fa fa-linkedin" aria-hidden="true"></i> </li>
 
-                          </div>
+                                        </ul>
 
-                    </div>
+                                  </div>
 
-              </div>
+                            </div>
+
+                      </div>
+
+                </div>
 
       </section>
-    </div>
+
 
       <!-- FOOTER -->
       <footer class="d-flex">
