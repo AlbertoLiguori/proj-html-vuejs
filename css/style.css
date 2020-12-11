@@ -79,6 +79,33 @@ section{
 }
 
 
+/* CARD */
+.card{
+  color: white;
+  height:600px;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.card button{
+  color:white;
+  background-color: black;
+  line-height: 17px;
+  font-size: 14px;
+  height:45px;
+  width:220px;
+  border:2px solid white;
+}
+
+/* BLACK BUTTON HOVER */
+.card button:hover{
+  background-color: white;
+  color:black;
+}
+
+
 /* JUMBOTRONE */
 .jumbotrone{
   color:white;
@@ -126,95 +153,11 @@ nav{
   justify-content: space-around;
   height:100%;
   align-items: center;
-
 }
 
 .left-nav{
   display: flex;
   align-items: center;
-}
-/* HELPERS */
-.mt-100{
-  margin-top: 100px;
-}
-
-.flex-1{
-  float:left;
-  flex:1;
-}
-
-.flex-2{
-float:left;
-flex:2;
-}
-
-.flex-3{
-float:left;
-flex:3;
-}
-
-.flex-4{
-float:left;
-flex:4;
-}
-
-.width-75{
-  width:75%;
-}
-
-
-
-/* DEBG */
-[class*="col-"]{
-  border:1px solid purple;
-}
-.h-700{
-  height:700px;
-}
-
-.h-900{
-  height:900px;
-}
-section{
-  border:3px solid red;
-}
-
-.row{
-  border:3px solid green;
-}
-
-.absolute{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-}
-
-/* CARD */
-.card{
-  color: white;
-  border:1px solid white;
-  height:600px;
-  display: flex;
-  flex:1;
-  flex-direction: column;
-  justify-content:space-between;
-}
-
-.card button{
-  color:white;
-  background-color: black;
-  line-height: 17px;
-  font-size: 14px;
-  height:45px;
-  width:220px;
-  border:2px solid white;
-}
-
-/* BLACK BUTTON HOVER */
-.card button:hover{
-  background-color: white;
-  color:black;
 }
 
 /* SECTION 1: UNIVERSAL EXPERIENCE */
@@ -229,8 +172,8 @@ section{
 }
 
 .first-section .right-section:hover {
-    transform: scale(110%);
-    box-shadow: 0 0 25px darkgray;
+  transform: scale(110%);
+  box-shadow: 0 0 25px darkgray;
 
 }
 
@@ -284,7 +227,6 @@ section{
 }
 
 /* SECTION 3:REVIEWS */
-
 .star-list{
   list-style: none;
 }
@@ -420,7 +362,6 @@ section{
 }
 
 /* SECTION 7: LA CARTE */
-
 .menu-container {
   background-color:lightgray;
   padding:50px;
@@ -433,7 +374,6 @@ section{
   justify-content: space-around;
 }
 
-
 .menu-special{
   color: white;
   background-image: url("img/misc22x.jpg");
@@ -443,7 +383,6 @@ section{
 }
 
 /* SECTION 8: BRAISED ABALONE */
-
 .abalone-section{
   background-image:url("img/hero42x.jpg");
   background-size: cover;
@@ -466,11 +405,9 @@ section{
 .abalone-section .card h6{
   font-size:18px;
   margin-top:10px;
-
 }
 
 /* SECTION 9:LAST SECTION */
-
 .last-section{
   background-image: url(img/slider52x.jpg);
   background-size: cover;
@@ -491,6 +428,7 @@ section{
   color:white;
   height:250px;
 }
+
 .last-section-container ul{
   list-style: none;
 }
@@ -518,4 +456,48 @@ footer{
   height:100px;
   justify-content: center;
   align-items: center;
+}
+
+/* HELPERS */
+.mt-100{
+  margin-top: 100px;
+}
+
+.flex-1{
+  float:left;
+  flex:1;
+}
+
+.flex-2{
+float:left;
+flex:2;
+}
+
+.flex-3{
+float:left;
+flex:3;
+}
+
+.flex-4{
+float:left;
+flex:4;
+}
+
+.width-75{
+  width:75%;
+}
+
+.h-700{
+  height:700px;
+}
+
+.h-900{
+  height:900px;
+}
+
+.absolute{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
 }
