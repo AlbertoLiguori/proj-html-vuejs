@@ -1,5 +1,5 @@
 // NAV DATA
-let navListArray = ["Home", "Culinary History", "Our Team", "Our Menu", "TakeOut", "Bulletin", "Reservsations"]
+let navListArray = ["Home", "Culinary History", "Our Team", "Our Menu", "TakeOut", "Bulletin", "Reservations"]
 
 // SECTION 1 DATA
 let itemsArray = [

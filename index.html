@@ -24,7 +24,7 @@
         <title>Avada Restaurant</title>
     </head>
 
-    <body >
+    <body>
 
     <div id="root">
 
@@ -330,17 +330,63 @@
 
                       <div class="row d-flex">
 
-                            <div class="flex-1" v-for="newe in news">
+                                  <div class="newe-container  img-h coffee d-flex emc2">
 
-                                  <div class="newe-container">
+                                        <div class="h-layer">
 
-                                        <img :src="newe.imgUrl" alt="">
-                                        <h5>{{newe.title}}</h5>
-                                        <span>{{newe.details}}</span>
+                                              <i class="fa fa-link" aria-hidden="true"></i>
+                                              <h5>THE BEST COFFEE IN TOWN</h5>
+                                              <span>News</span>
+
+                                        </div>
+
+                                        <div  class="info-container">
+
+                                              <h5>THE BEST COFFEE IN TOWN</h5>
+                                              <span>By admin | January 7th 2020 | Categories: News</span>
+
+                                        </div>
 
                                   </div>
 
-                            </div>
+                                  <div class="newe-container  img-h cook-girl  d-flex">
+
+                                        <div class="h-layer">
+
+                                              <i class="fa fa-link" aria-hidden="true"></i>
+                                              <h5>DISCOVER OUR NEW MENU</h5>
+                                              <span>News</span>
+
+                                        </div>
+
+                                        <div  class="info-container">
+
+                                              <h5>DISCOVER OUR NEW MENU</h5>
+                                              <span>By admin | January 7th 2020 | Categories: News</span>
+
+                                        </div>
+
+                                  </div>
+
+                                  <div class="newe-container  img-h cardless d-flex">
+
+                                        <div class="h-layer">
+
+                                              <i class="fa fa-link" aria-hidden="true"></i>
+                                              <h5>DISCOVER OUR NEW MENU</h5>
+                                              <span>News</span>
+
+                                        </div>
+
+                                        <div  class="info-container">
+
+                                              <h5>WE NOW ACCEPT SQUARE</h5>
+                                              <span>By admin | January 7th 2020 | Categories: News</span>
+
+                                        </div>
+
+                                  </div>
+
 
                       </div>
 
@@ -468,9 +514,13 @@
 
                               <div class="card absolute">
 
-                                      <h6>$52</h6>
+                                      <div class="d-flex">
 
-                                      <h2>BRAISED ABALONE</h2>
+                                            <h2>BRAISED ABALONE</h2>
+
+                                            <h6>$52</h6>
+
+                                      </div>
 
                                       <div class="line"></div>
 
@@ -492,6 +542,8 @@
       </section>
 
       <!-- SECTION 9:LAST SECTION-->
+
+      <div class="bg-black">
 
       <section class="last-section">
 
@@ -522,6 +574,7 @@
               </div>
 
       </section>
+    </div>
 
       <!-- FOOTER -->
       <footer class="d-flex">
