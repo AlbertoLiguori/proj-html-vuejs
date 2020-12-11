@@ -78,6 +78,42 @@ section{
   margin-top:30px;
 }
 
+/* WIDGETS */
+.on-sale-1{
+  position:fixed;
+  right:20px;
+  top:200px;
+  height:70px;
+  width:70px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+  z-index:10;
+  color:cadetblue;
+}
+
+.on-sale-2{
+  position:fixed;
+  right:20px;
+  top:280px;
+  height:70px;
+  width:70px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+  z-index:10;
+  color:cadetblue;
+}
+
+.on-sale-2 .absolute span{
+  font-weight: bold;
+}
+
+.on-sale-2 .absolute h5{
+  display: inline;
+}
+
+
 
 /* CARD */
 .card{
